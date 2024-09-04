@@ -1,0 +1,21 @@
+ALTER TABLE students
+ADD column student_pass varchar(255);
+
+ALTER TABLE students
+MODIFY COLUMN student_contact_ref INT DEFAULT NULL;
+
+ALTER TABLE students
+ADD CONSTRAINT fk_student_contact
+FOREIGN KEY (student_contact_ref) REFERENCES contacts(contact_email)
+ON DELETE CASCADE;
+
+ALTER TABLE grades
+ADD CONSTRAINT fk_grade_student
+FOREIGN KEY (grade_student_epita_email_ref)
+REFERENCES students(student_epita_email)
+ON DELETE CASCADE;
+
+ALTER TABLE courses
+MODIFY COLUMN course_rev INT DEFAULT NULL;
+
+

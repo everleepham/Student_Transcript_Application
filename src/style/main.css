@@ -1,0 +1,366 @@
+body {
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: 'Georgia', sans-serif;
+    color: #333;
+}
+  
+p {
+    font-size: 20px;
+}
+
+.material-symbols-outlined {
+    display: flex;
+}
+
+#wrapper {
+    max-width: 945px;
+    margin: 0px auto;
+}
+
+
+.form_group {
+    width: 300px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+
+}
+
+
+.login-header {
+    margin: 50px 0 20px 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+  
+.input-box {
+    width: 255px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-field {
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    color: #393b3c;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+    flex: 1;
+}
+
+.radio-group {
+    margin-right: 75px; /* Tạo khoảng cách 20px giữa các phần tử input */
+}
+
+label {
+    font-weight: bold;
+    color: #575656;
+}
+
+.input-select {
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    color: #393b3c;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 250px;
+    flex: 1;
+}
+
+.login-input {
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    color: #393b3c;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100px;
+    flex: 1;
+    font-weight: bold;
+}
+
+.add-course {
+    width: 300px;
+    padding: 10px 0px;
+    background-color: #c0c0c0;
+    color: rgb(207, 205, 205);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Georgia', sans-serif;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+
+.add-course-input {
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    color: #393b3c;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+    flex: 1;
+}
+
+.login_button {
+    width: 100px;
+    padding: 10px 0px;
+    background-color: #c0c0c0;
+    color: rgb(207, 205, 205);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Georgia', sans-serif;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+}
+
+.login-failed {
+    color: rgb(193, 9, 9);
+    font-size: 20px;
+    font-family: 'Georgia', sans-serif;
+    text-align: center;
+}
+
+#main-content {
+    display: flex;
+}
+
+#content{
+    flex-basis: 70%;
+}
+  
+#sidebar {
+    flex-basis: 30%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.header-content p, .header-content .dropdown {
+    margin: 0;
+    margin-top: 20px; 
+}
+
+.dropdown button {
+    background-color: white;
+    color: black;
+    padding: 6px 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Georgia', sans-serif;
+    text-decoration: underline;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 6px 7px;
+}
+
+.dropdown .content{
+    background-color: rgb(249, 247, 247);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    display: none;
+    border-radius: 10px;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: rgb(213, 213, 215);
+    text-decoration: strong;
+    color:#000;
+    text-decoration: none;
+}
+
+.dropdown:hover a:hover {
+    background-color: #e9eaeb;
+}
+
+.logout {
+    margin-left: auto; 
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+    vertical-align: middle; 
+    position: relative;
+    top: 6px;
+  
+}
+
+.logout .material-symbols-outlined {
+    font-size: 24px; 
+    line-height: 1; 
+}
+
+.logout a {
+    display: inline-block;
+    line-height: 1.5;
+    vertical-align: middle; 
+
+
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid rgb(17, 16, 16);
+    width: 930px;
+    font-weight: normal;
+    padding: 5px;
+    text-align: center;
+}
+
+thead {
+    background-color: #e9eaeb;
+}
+
+.custom_link {
+    position: relative;
+    color: #000; 
+    text-decoration: none; 
+}
+
+.custom_link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(30, 30, 60); 
+}
+.custom_link:visited {
+    color:rgb(35, 60, 158)
+}
+
+.custom_link {
+    color:rgb(54, 49, 49)
+}
+
+#attendance {
+    width: 450px;
+    height: 90px;
+}
+
+img {
+    width: 370px;
+    height: auto;
+}
+
+#sub_title {
+    text-align: center;
+}
+
+.custom {
+    text-decoration: underline;
+    color:#000
+}
+
+.custom:hover {
+    font-weight: bold; 
+} 
+
+.null-value {
+    color: gray;
+    font-style: italic;
+}
+
+.search {
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background-color: #ebebeb;
+    height: 10px;
+    transition: box-shadow 0.25s;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: Georgia, sans-serif;
+    color: #393b3c;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+    flex: 1;
+}
+
+.search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+    margin-right: 20px; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; 
+}
+
+.add-student {
+    --padding: 14px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background-color: #c3c3c7;
+    height: 10px;
+ 
+}
+
+
